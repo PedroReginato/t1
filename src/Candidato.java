@@ -1,5 +1,4 @@
 public class Candidato {
-
 	private int numero;
 	private String nome;
 	private String municipio;
@@ -22,5 +21,13 @@ public class Candidato {
 
 	public String getMunicipio() {
 		return municipio;
+	}
+
+	public int getVotos() {
+		return votos;
+	}
+
+	public void adicionaVotos(int votos) {
+		this.votos += votos;
 	}
 }
