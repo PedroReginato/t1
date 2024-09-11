@@ -1,6 +1,6 @@
 import java.util.ArrayList;
-public class CadastroPartido {
 
+public class CadastroPartido {
 	private ArrayList<Partido> partidos;
 
 	public CadastroPartido() {
@@ -14,7 +14,7 @@ public class CadastroPartido {
 
 	public Partido consultaPartido(String nome) {
 		for (Partido p : partidos) {
-			if (p.getNome().equals(nome)){
+			if (p.getNome().equals(nome)) {
 				return p;
 			}
 		}
@@ -22,11 +22,15 @@ public class CadastroPartido {
 	}
 
 	public Partido consultaPartido(int numero) {
-		for (Partido p : partidos){
-			if (p.getNumero() == numero){
+		for (Partido p : partidos) {
+			if (p.getNumero() == numero) {
 				return p;
 			}
 		}
 		return null;
+	}
+
+	public ArrayList<Partido> getPartidos() {
+		return partidos;
 	}
 }
