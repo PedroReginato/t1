@@ -1,11 +1,8 @@
 public class Partido {
-
 	private int numero;
 	private String nome;
 
-
-
-	public Partido(int numero, String nome){
+	public Partido(int numero, String nome) {
 		this.numero = numero;
 		this.nome = nome;
 	}
@@ -14,12 +11,7 @@ public class Partido {
 		return numero;
 	}
 
-	public String getNome(){
+	public String getNome() {
 		return nome;
 	}
-
-	public void adicionaCandidato(Candidato c) {
-
-	}
-
 }
