@@ -8,29 +8,25 @@ public class CadastroPartido {
 	}
 
 	public boolean cadastraPartido(Partido p) {
-		partidos.add(p);
-		return true;
+		for (Partido partido : partidos) {
+			if(partido.getNumero() == p.getNumero()) return false;
+		}
+		return partidos.add(p);
 	}
 
 	public Partido consultaPartido(String nome) {
 		for (Partido p : partidos) {
-			if (p.getNome().equals(nome)) {
-				return p;
-			}
+			if (p.getNome().equals(nome)) return p;
 		}
 		return null;
 	}
 
 	public Partido consultaPartido(int numero) {
 		for (Partido p : partidos) {
-			if (p.getNumero() == numero) {
-				return p;
-			}
+			if (p.getNumero() == numero) return p;
 		}
 		return null;
 	}
 
-	public ArrayList<Partido> getPartidos() {
-		return partidos;
-	}
+	public ArrayList<Partido> getPartidos() {return partidos;}
 }
