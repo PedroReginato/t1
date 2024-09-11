@@ -65,13 +65,10 @@ public class ACMEVoting {
     }
 
     public void mostrarPartidosPeloNumero() {
-        String line;
         try {
-            while ((line = reader.readLine()) != null && !line.equals("-1")) {
-                if (line.equals("-1")) break;
-                    
-            }
-        } catch (IOException e) {}
+            Partido partido = cadastroPartido.consultaPartido(Integer.parseInt(reader.readLine()));
+            System.out.println("4:" + partido != null ? partido.getDescricao() : "Nenhum partido encontrado.");
+        } catch (Exception e) {}
     }
 
     public void mostrar() {

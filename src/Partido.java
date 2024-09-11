@@ -22,5 +22,6 @@ public class Partido {
 
 	public int getNumero() {return numero;}
 	public String getNome() {return nome;}
+	public String getDescricao(){return String.format("%d,%s", numero,nome);}
 
 }
