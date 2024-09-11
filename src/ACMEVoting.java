@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
-
+//gestando
 public class ACMEVoting {
 	private Scanner in;
 	private int opcao = 1;
